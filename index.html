@@ -125,7 +125,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -156,6 +156,104 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/06/Springframework-components/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lin Duan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lynn's blog">
+      <meta itemprop="description" content="Welcome">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Lynn's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/08/06/Springframework-components/" class="post-title-link" itemprop="url">Springframework components</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-08-06 15:46:05 / Modified: 16:52:06" itemprop="dateCreated datePublished" datetime="2023-08-06T15:46:05+10:00">2023-08-06</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Word count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>618</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>1 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="Component"><a href="#Component" class="headerlink" title="@Component"></a>@Component</h3><p>Automatically generate bean object.<br>Require @ComponentScan to reach the package where class is defined</p>
+<h3 id="Primary-vs-Qualifier"><a href="#Primary-vs-Qualifier" class="headerlink" title="@Primary vs @Qualifier"></a>@Primary vs @Qualifier</h3><p>@Primary - A bean should be given preference when multiple candidates are qualified<br>@Qualifier - A specific bean should be auto-wired (name of the bean can be used as qualifier)</p>
+<h2 id="Dependency-injection-types"><a href="#Dependency-injection-types" class="headerlink" title="Dependency injection types"></a>Dependency injection types</h2><ul>
+<li>Constructor-based</li>
+<li>Setter-based</li>
+<li>Field</li>
+</ul>
+<p>##Important terminology<br>@Component: An instance of class will be managed by spring framework\</p>
+<p>Dependency: GameRunner needs GamingConsole implement</p>
+<ul>
+<li>GamingConsole Impl is a dependency of GameRunner</li>
+</ul>
+<p>Component Scan: how does spring framework find the component</p>
+<p>Dependency injection: identify beans, their dependencies and wire them together</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -279,7 +377,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-08-06 12:49:49 / Modified: 14:11:03" itemprop="dateCreated datePublished" datetime="2023-08-06T12:49:49+10:00">2023-08-06</time>
+      <time title="Created: 2023-08-06 12:49:49 / Modified: 14:21:57" itemprop="dateCreated datePublished" datetime="2023-08-06T12:49:49+10:00">2023-08-06</time>
     </span>
 
   
@@ -289,7 +387,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Word count in article: </span>
-      <span>478</span>
+      <span>654</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -314,6 +412,13 @@
 
 <p>Install package</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">conda install -c conda-forge opencv</span><br><span class="line"></span><br><span class="line">conda install -c anaconda notebook</span><br><span class="line"></span><br><span class="line">conda install -c anaconda tensorflow</span><br><span class="line"></span><br><span class="line">conda install -c anaconda numpy</span><br><span class="line"></span><br><span class="line">conda install pandas</span><br><span class="line"></span><br><span class="line">conda install -c conda-forge matplotlib</span><br><span class="line"></span><br><span class="line">conda install scikit-image</span><br><span class="line"></span><br><span class="line">conda install scikit-learn </span><br></pre></td></tr></table></figure>
+<p>Common commands for conda</p>
+<ol>
+<li>conda list: show all the package</li>
+<li>conda install package_name: install package</li>
+<li>conda env list&#x2F; conda info -e: Check current environment</li>
+<li>conda update conda: update current conda</li>
+</ol>
 
       
     </div>
@@ -622,7 +727,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="Word count total">1k</span>
+    <span title="Word count total">2k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
